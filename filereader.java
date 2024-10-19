@@ -8,12 +8,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.jar.JarFile
 import java.util.jar.JarEntry 
+import java.net.URL;
 
 public class filereader { 
 
     public static void main (String[] args) {
         
-        int exists = 0
+        int exists = 0;
         String currentDirectory = System.getProperty(“user.dir”);
         String fileName = currentDirectory + “.jar”; 
         File file = new File(fileName);
@@ -26,8 +27,9 @@ public class filereader {
             System.exit(1);  
         }
         
-     public static void mods {
+     public static void mods() {
      
+     String modsdir = currentDirectory + ”/mod“;
       
         
         

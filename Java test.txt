@@ -1,0 +1,22 @@
+if (exists = false) {
+        System.err.println("Can’t find the main program of minecraft!");
+        System.exit(1);
+        
+        
+        
+        
+        import java.io.File;
+import java.net.URL;
+
+public class JarDirectoryLocator {
+    public static void main(String[] args) {
+        URL url = JarDirectoryLocator.class.getProtectionDomain().getCodeSource().getLocation();
+        try {
+            File file = new File(url.toURI());
+            String directoryPath = file.getParentFile().getAbsolutePath();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+        
