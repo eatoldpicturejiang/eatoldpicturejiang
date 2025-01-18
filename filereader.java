@@ -29,7 +29,7 @@ public class filereader {
         
      public static void mods() {
      
-     String modsdir = currentDirectory + ”/mod“;
+     String modsdir = currentDirectory + ”/mods“;
       
         
         
